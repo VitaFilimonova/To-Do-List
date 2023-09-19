@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lilita+One&family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+    background: linear-gradient(80deg, rgba(252, 76, 63, 1), rgba(253, 138, 94, 1), rgba(223, 0, 223, 1), rgba(81, 225, 226, 1));
+    background-size: 100% 200%;
+    transition: background 0.5ms ease;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Lilita One';
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+h2 {
+    font-family: 'Lilita One';
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+.form {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 100px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.16);
+    padding: 40px;
+}
+
+.input {
+    width: 70%;
+    height: 50px;
+    border-radius: 90px;
+    background: #FFF;
+    padding-left: 30px;
+    padding-right: 20px;
+    font-size: larger;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+.input::placeholder {
+    font-family: Roboto;
+}
+
+.button__fill {
+    border-radius: 45px;
+    background: #FFF;
+    color: #ab09cb;
+    box-shadow: -2px -4px 4px 0 rgba(0, 0, 0, 0.25) inset;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 10px 30px;
+}
+
+button img {
+    pointer-events: none;
+}
+
+.filters {
+    width: 70%;
+    display: none;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+
+.filters__active {
+    display: flex;
+}
+
+.filters__button {
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    width: 220px;
+    height: 66px;
+    border-radius: 45px;
+    border: 3px solid #FFF;
+    transition: box-shadow .2s ease-in-out;
+}
+
+.filters__button:hover {
+    box-shadow: 0 0 10px #FFFFFF,
+    0 0 20px #FFFFFF,
+    0 0 30px #FFFFFF,
+    0 0 40px #ab09cb,
+    0 0 50px #ab09cb,
+    0 0 70px #FFFFFF;
+}
+
+.list {
+    background-blend-mode: overlay, normal;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    padding: 5px;
+    width: 60%;
+    border-radius: 20px;
+    min-height: fit-content;
+}
+
+.list-done__padding {
+    padding: 0;
+}
+
+.list__item {
+    border-radius: 18px;
+    background: #FFF;
+    box-shadow: 5px 6px 4px 0 rgba(0, 0, 0, 0.25);
+    margin: 20px auto;
+    padding: 20px 15px;
+    font-size: 24px;
+    color: #262424;
+    font-family: Arial;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    height: content-box;
+    word-wrap: break-word;
+}
+
+.list__item_done {
+    text-decoration: line-through;
+}
+
+.list__buttons {
+    display: flex;
+    margin: 0 10px;
+    align-items: center;
+}
+
+.list__button {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    border-radius: 29px;
+}
+
+.list__button:hover {
+    transform: translateY(2px);
+}
+
+.list__button_done {
+    background: radial-gradient(50% 50% at 50% 50%, #86F37C 0%, #0AB745 100%);
+    box-shadow: 0 2px 1px 0 rgba(255, 255, 255, 0.25) inset, 0 -4px 2px 0 rgba(0, 0, 0, 0.25) inset, 0 0 1px 4px rgba(255, 255, 255, 0.10), 0 0 180px 0 #9917FF;
+}
+
+.list__button_change {
+    background: radial-gradient(50% 50% at 50% 50%, #A47CF3 0%, #683FEA 100%);
+    box-shadow: 0 2px 1px 0 rgba(255, 255, 255, 0.25) inset, 0 -4px 2px 0 rgba(0, 0, 0, 0.25) inset, 0 0 1px 4px rgba(255, 255, 255, 0.10), 0 0 180px 0 #9917FF;
+}
+
+.list__button_delete {
+    background: radial-gradient(50% 50% at 50% 50%, #F37C91 0%, #EA3F3F 100%);
+    box-shadow: 0 2px 1px 0 rgba(255, 255, 255, 0.25) inset, 0 -4px 2px 0 rgba(0, 0, 0, 0.25) inset, 0 0 1px 4px rgba(255, 255, 255, 0.10), 0 0 180px 0 #9917FF;
+}
+
+.list-done {
+    background-blend-mode: overlay, normal;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    width: 60%;
+}
+
+.count {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin: 20px auto;
+    color: #FFFFFF;
+    font-family: Arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 24px;
+    pointer-events: none;
+    cursor: none;
+}
+
+.even {
+    background-color: #5bcbad;
+}
+
+.odd {
+    background-color: #afe146;
+}
+
+.none {
+    display: none;
+}
+
+@media (max-width: 1550px) {
+    .input {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1350px) {
+    .input {
+        width: 50%;
+    }
+
+    .filters__button {
+        width: 150px;
+    }
+}
+

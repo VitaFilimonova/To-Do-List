@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1> To Do List</h1>
+    </header>
+
+    <div class="form">
+        <input type="text" class="input" placeholder="Write your notes...">
+        <button id="add-button" class="button__fill">Add</button>
+        <button id="filter-button" class="button__fill">Filter ▼</button>
+    </div>
+
+    <div id='filters' class="filters">
+        <button class="filters__button" id="selectOddElement">Select odd elements</button>
+        <button class="filters__button" id="selectEvenElement">Select even elements</button>
+        <button class="filters__button" id="deleteFirstElement">Delete first element</button>
+        <button class="filters__button" id="deleteLastElement">Delete last element</button>
+    </div>
+
+    <div class="count">
+        <p id="nonCompleted"> Non completed: 0 </p>
+        <p id="completed"> Completed: 0</p>
+    </div>
+
+    <h2 id="listEmpty"> No tasks. Add new tasks right now!</h2>
+
+    <ul class="list" id="list"></ul>
+    <ul id="listDone" class="list" ></ul>
+
+</div>
+
+<script src="./js/main.js"></script>
+</body>
+</html>
+
+
